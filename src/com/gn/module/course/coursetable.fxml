@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="1120.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.course.CourseTableController">
+    <children>
+        <TabPane>
+            <tabs>
+                <Tab closable="false" text="课程信息表">
+                    <content>
+                        <VBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <HBox prefHeight="32.0" prefWidth="940.0">
+                                    <children>
+                                        <ChoiceBox fx:id="filterChoice" prefHeight="37.0" prefWidth="150.0">
+                                            <HBox.margin>
+                                                <Insets right="10.0" />
+                                            </HBox.margin>
+                                        </ChoiceBox>
+                                        <TextField fx:id="filterChoiceValueField" prefHeight="32.0" prefWidth="163.0" promptText="条件值">
+                                            <HBox.margin>
+                                                <Insets right="10.0" />
+                                            </HBox.margin></TextField>
+                                        <Button mnemonicParsing="false" onAction="#onFilter" prefHeight="32.0" prefWidth="57.0" text="检索">
+                                            <HBox.margin>
+                                                <Insets right="10.0" />
+                                            </HBox.margin></Button>
+                                        <Button mnemonicParsing="false" onAction="#onRecover" prefHeight="32.0" prefWidth="57.0" text="恢复">
+                                            <HBox.margin>
+                                                <Insets right="10.0" />
+                                            </HBox.margin></Button>
+                                        <Button mnemonicParsing="false" onAction="#refresh" prefHeight="32.0" prefWidth="57.0" text="刷新">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin></Button>
+                              <Button mnemonicParsing="false" onAction="#exportAsCsv" prefHeight="32.0" text="导出为Csv" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <TableView fx:id="courseTable" editable="true" prefHeight="888.0" prefWidth="940.0">
+                                    <columns>
+                                        <TableColumn fx:id="cc1" editable="false" text="ID">
+                                        </TableColumn>
+                                        <TableColumn fx:id="cc2" text="名称">
+                                        </TableColumn>
+                                        <TableColumn fx:id="cc3" text="教师ID">
+                                        </TableColumn>
+                                        <TableColumn fx:id="cc4" text="开课时间">
+                                        </TableColumn>
+                                        <TableColumn fx:id="cc5" text="学分">
+                                        </TableColumn>
+                                    </columns>
+                                    <columnResizePolicy>
+                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                    <VBox.margin>
+                                        <Insets bottom="30.0" />
+                                    </VBox.margin>
+                                </TableView>
+                                <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
+                                    <buttons>
+                                        <Button mnemonicParsing="false" onAction="#onDelete" text="删除选定项目" />
+                                    </buttons>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </ButtonBar>
+                                <HBox prefHeight="100.0" prefWidth="200.0" />
+                            </children>
+                            <padding>
+                                <Insets left="30.0" right="30.0" />
+                            </padding>
+                        </VBox>
+                    </content>
+                </Tab>
+            </tabs>
+
+        </TabPane>
+    </children>
+    <stylesheets>
+        <URL value="@../../theme/css/material-color.css" />
+        <URL value="@../../theme/css/skeleton.css" />
+        <URL value="@../../theme/css/light.css" />
+        <URL value="@../../theme/css/bootstrap.css" />
+        <URL value="@../../theme/css/simple-green.css" />
+        <URL value="@../../theme/css/shape.css" />
+        <URL value="@../../theme/css/typographic.css" />
+        <URL value="@../../theme/css/helpers.css" />
+        <URL value="@../../theme/css/master.css" />
+    </stylesheets>
+</StackPane>

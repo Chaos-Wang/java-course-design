@@ -1,0 +1,13 @@
+<hibernate-mapping package="com.gn.global.bean">
+
+    <class name="com.gn.global.bean.intity.Teacher" table="teacher">
+        <!--主键映射，属性名为id，列名也为id-->
+        <id name="id" column="id">
+            <!--根据底层数据库主键自动增长-->
+            <generator class="native"/>
+        </id>
+
+        <!--非主键映射，属性和列名一一对应-->
+        <property name="name" column="name"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="1120.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.course.TermReportOfStudentController">
+    <children>
+        <TabPane>
+            <tabs>
+                <Tab closable="false" text="学生学期成绩">
+                    <content>
+                        <VBox alignment="CENTER" spacing="10.0">
+                            <children>
+                                <HBox prefHeight="32.0" prefWidth="940.0">
+                                    <children>
+                              <TextField fx:id="studentIdField" prefHeight="32.0" prefWidth="163.0" promptText="学生ID">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                                        <TextField fx:id="timeField" prefHeight="32.0" prefWidth="163.0" promptText="学期">
+                                            <HBox.margin>
+                                                <Insets right="10.0" />
+                                            </HBox.margin></TextField>
+                                        <Button mnemonicParsing="false" onAction="#onSearch" prefHeight="32.0" prefWidth="57.0" text="检索">
+                                            <HBox.margin>
+                                                <Insets right="10.0" />
+                                            </HBox.margin></Button>
+                                        <Button mnemonicParsing="false" onAction="#onRecover" prefHeight="32.0" prefWidth="57.0" text="恢复">
+                                            <HBox.margin>
+                                                <Insets right="10.0" />
+                                            </HBox.margin></Button>
+                                        <Button mnemonicParsing="false" onAction="#onSearch" prefHeight="32.0" prefWidth="57.0" text="刷新">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin></Button>
+                              <Button mnemonicParsing="false" onAction="#exportAsCsv" text="导出为Csv" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="GPALabel" prefHeight="167.0" prefWidth="947.0" text="Label" />
+                           </children></HBox>
+                                <TableView fx:id="gradeReportTable" editable="false" prefHeight="888.0" prefWidth="940.0">
+                                    <columns>
+                                        <TableColumn fx:id="gc1" text="学生名">
+                                        </TableColumn>
+                                        <TableColumn fx:id="gc2" text="课程名">
+                                        </TableColumn>
+                                        <TableColumn fx:id="gc3" text="班级">
+                                        </TableColumn>
+                                        <TableColumn fx:id="gc4" text="专业">
+                                        </TableColumn>
+                                        <TableColumn fx:id="gc5" text="学院">
+                                        </TableColumn>
+                                        <TableColumn fx:id="gc6" text="成绩">
+                                        </TableColumn>
+                                        <TableColumn fx:id="gc7" text="状态">
+                                        </TableColumn>
+                                        <TableColumn fx:id="gc8" text="绩点">
+                                        </TableColumn>
+                                        <TableColumn fx:id="gc9" text="学分">
+                                        </TableColumn>
+
+                                    </columns>
+                                    <columnResizePolicy>
+                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                    <VBox.margin>
+                                        <Insets bottom="30.0" />
+                                    </VBox.margin>
+                                </TableView>
+                            </children>
+                            <padding>
+                                <Insets left="30.0" right="30.0" />
+                            </padding>
+                        </VBox>
+                    </content>
+                </Tab>
+            </tabs>
+
+        </TabPane>
+    </children>
+    <stylesheets>
+        <URL value="@../../theme/css/material-color.css" />
+        <URL value="@../../theme/css/skeleton.css" />
+        <URL value="@../../theme/css/light.css" />
+        <URL value="@../../theme/css/bootstrap.css" />
+        <URL value="@../../theme/css/simple-green.css" />
+        <URL value="@../../theme/css/shape.css" />
+        <URL value="@../../theme/css/typographic.css" />
+        <URL value="@../../theme/css/helpers.css" />
+        <URL value="@../../theme/css/master.css" />
+    </stylesheets>
+</StackPane>

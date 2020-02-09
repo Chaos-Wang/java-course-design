@@ -1,0 +1,20 @@
+<hibernate-mapping package="com.gn.global.bean">
+
+    <class name="com.gn.global.bean.intity.Student" table="student">
+        <!--主键映射，属性名为id，列名也为id-->
+        <id name="id" column="id">
+            <!--根据底层数据库主键自动增长-->
+            <generator class="native"/>
+        </id>
+
+        <!--非主键映射，属性和列名一一对应-->
+        <property name="name" column="name"/>
+        <property name="status" column="status"/>
+        <property name="checkInTime" column="checkInTime"/>
+        <property name="college" column="college"/>
+        <property name="subject" column="subject"/>
+        <property name="classes" column="classes"/>
+        <property name="level" column="level"/>
+
+    </class>
+</hibernate-mapping>

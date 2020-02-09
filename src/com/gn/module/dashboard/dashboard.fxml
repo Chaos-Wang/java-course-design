@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="1500.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.dashboard.Dashboard">
+
+   <stylesheets>
+      <URL value="@../../theme/css/material-color.css" />
+      <URL value="@../../theme/css/skeleton.css" />
+      <URL value="@../../theme/css/light.css" />
+      <URL value="@../../theme/css/bootstrap.css" />
+      <URL value="@../../theme/css/shape.css" />
+      <URL value="@../../theme/css/typographic.css" />
+      <URL value="@../../theme/css/helpers.css" />
+      <URL value="@../../theme/css/master.css" />
+   </stylesheets>
+   <children>
+      <ImageView fitHeight="1200" fitWidth="1600" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../media/img/image.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</StackPane>

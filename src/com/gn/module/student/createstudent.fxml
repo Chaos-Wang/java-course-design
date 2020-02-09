@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="1120.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.student.CreateStudentController">
+   <children>
+      <TabPane>
+         <tabs>
+            <Tab closable="false" text="添加学生">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="433.0" prefWidth="772.0" spacing="10.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="134.0" prefWidth="940.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <TextFlow prefHeight="54.0" prefWidth="952.0">
+                                             <children>
+                                                <Label prefHeight="99.0" prefWidth="199.0" text="添加学生">
+                                                   <styleClass>
+                                                      <String fx:value="h2" />
+                                                      <String fx:value="title" />
+                                                   </styleClass>
+                                                </Label>
+                                             </children>
+                                          </TextFlow>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ToggleButton fx:id="tb1" mnemonicParsing="false" onAction="#tb1Function" prefHeight="38.0" prefWidth="118.0" text="通过填写创建">
+                                       <HBox.margin>
+                                          <Insets right="10.0" />
+                                       </HBox.margin>
+                                    </ToggleButton>
+                                    <ToggleButton fx:id="tb2" mnemonicParsing="false" onAction="#tb2Function" prefHeight="39.0" prefWidth="126.0" text="通过Demo重建" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="746.0" prefWidth="940.0">
+                           <children>
+                              <VBox prefHeight="746.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="48.0" prefWidth="200.0">
+                                             <children>
+                                                <TextFlow prefHeight="54.0" prefWidth="200.0">
+                                                   <children>
+                                                      <Label prefHeight="60.0" prefWidth="200.0" text="姓名">
+                                                         <styleClass>
+                                                            <String fx:value="h4" />
+                                                            <String fx:value="title" />
+                                                         </styleClass>
+                                                      </Label>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="171.0">
+                                             <children>
+                                                <TextField fx:id="nameField" prefHeight="54.0" prefWidth="171.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="193.0" prefWidth="150.0">
+                                       <children>
+                                          <VBox prefHeight="27.0" prefWidth="171.0">
+                                             <children>
+                                                <TextFlow prefHeight="54.0" prefWidth="952.0">
+                                                   <children>
+                                                      <Label prefHeight="60.0" prefWidth="2000.0" text="专业">
+                                                         <styleClass>
+                                                            <String fx:value="h4" />
+                                                            <String fx:value="title" />
+                                                         </styleClass>
+                                                      </Label>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="171.0">
+                                             <children>
+                                                <TextField fx:id="subjectField" prefHeight="54.0" prefWidth="171.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="746.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="27.0" prefWidth="171.0">
+                                             <children>
+                                                <TextFlow prefHeight="54.0" prefWidth="952.0">
+                                                   <children>
+                                                      <Label prefHeight="60.0" prefWidth="200.0" text="学院">
+                                                         <styleClass>
+                                                            <String fx:value="h4" />
+                                                            <String fx:value="title" />
+                                                         </styleClass>
+                                                      </Label>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="171.0">
+                                             <children>
+                                                <TextField fx:id="collegeField" prefHeight="54.0" prefWidth="171.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="27.0" prefWidth="171.0">
+                                             <children>
+                                                <TextFlow prefHeight="54.0" prefWidth="952.0">
+                                                   <children>
+                                                      <Label prefHeight="60.0" prefWidth="200.0" text="班级">
+                                                         <styleClass>
+                                                            <String fx:value="h4" />
+                                                            <String fx:value="title" />
+                                                         </styleClass>
+                                                      </Label>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="171.0">
+                                             <children>
+                                                <TextField fx:id="classesField" prefHeight="54.0" prefWidth="171.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <VBox prefHeight="135.0" prefWidth="940.0">
+                           <children>
+                              <ButtonBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0">
+                                <buttons>
+                                  <Button fx:id="createButton" mnemonicParsing="false" onAction="#createStudent" text="创建" />
+                                </buttons>
+                              </ButtonBar>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="30.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+            <Tab closable="false" text="修改Demo">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="433.0" prefWidth="772.0" spacing="10.0">
+                     <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="134.0" prefWidth="940.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <TextFlow prefHeight="54.0" prefWidth="952.0">
+                                             <children>
+                                                <Label prefHeight="99.0" prefWidth="199.0" text="新建Demo">
+                                                   <styleClass>
+                                                      <String fx:value="h2" />
+                                                      <String fx:value="title" />
+                                                   </styleClass>
+                                                </Label>
+                                             </children>
+                                          </TextFlow>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox prefHeight="746.0" prefWidth="940.0">
+                           <children>
+                              <VBox prefHeight="746.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="27.0" prefWidth="171.0">
+                                             <children>
+                                                <TextFlow prefHeight="54.0" prefWidth="952.0">
+                                                   <children>
+                                                      <Label prefHeight="60.0" prefWidth="200.0" text="班级">
+                                                         <styleClass>
+                                                            <String fx:value="h4" />
+                                                            <String fx:value="title" />
+                                                         </styleClass>
+                                                      </Label>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="171.0">
+                                             <children>
+                                                <TextField fx:id="classesDemoField" prefHeight="54.0" prefWidth="171.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="150.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="27.0" prefWidth="171.0">
+                                             <children>
+                                                <TextFlow prefHeight="54.0" prefWidth="952.0">
+                                                   <children>
+                                                      <Label prefHeight="60.0" prefWidth="200.0" text="学院">
+                                                         <styleClass>
+                                                            <String fx:value="h4" />
+                                                            <String fx:value="title" />
+                                                         </styleClass>
+                                                      </Label>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="171.0">
+                                             <children>
+                                                <TextField fx:id="collegeDemoField" prefHeight="54.0" prefWidth="171.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <HBox.margin>
+                                    <Insets right="30.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox prefHeight="746.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox prefHeight="193.0" prefWidth="150.0">
+                                       <children>
+                                          <VBox prefHeight="27.0" prefWidth="171.0">
+                                             <children>
+                                                <TextFlow prefHeight="54.0" prefWidth="952.0">
+                                                   <children>
+                                                      <Label prefHeight="60.0" prefWidth="2000.0" text="专业">
+                                                         <styleClass>
+                                                            <String fx:value="h4" />
+                                                            <String fx:value="title" />
+                                                         </styleClass>
+                                                      </Label>
+                                                   </children>
+                                                </TextFlow>
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="41.0" prefWidth="171.0">
+                                             <children>
+                                                <TextField fx:id="subjectDemoField" prefHeight="54.0" prefWidth="171.0" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="30.0" right="30.0" top="30.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../theme/css/material-color.css" />
+      <URL value="@../../theme/css/skeleton.css" />
+      <URL value="@../../theme/css/light.css" />
+      <URL value="@../../theme/css/bootstrap.css" />
+      <URL value="@../../theme/css/simple-green.css" />
+      <URL value="@../../theme/css/shape.css" />
+      <URL value="@../../theme/css/typographic.css" />
+      <URL value="@../../theme/css/helpers.css" />
+      <URL value="@../../theme/css/master.css" />
+   </stylesheets>
+</StackPane>

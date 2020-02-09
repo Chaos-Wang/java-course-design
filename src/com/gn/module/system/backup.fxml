@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="1120.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gn.module.system.backup">
+    <children>
+        <TabPane>
+            <tabs>
+                <Tab closable="false" text="备份数据">
+                    <content>
+                        <VBox alignment="CENTER" prefHeight="433.0" prefWidth="772.0" spacing="10.0">
+                            <children>
+                                <VBox alignment="CENTER_LEFT" prefHeight="1048.0" prefWidth="940.0">
+                                    <children>
+                                        <Label prefHeight="74.0" prefWidth="195.0" text="备份数据">
+                                            <styleClass>
+                                                <String fx:value="h3" />
+                                                <String fx:value="title" />
+                                            </styleClass>
+                                        </Label>
+                              <CheckBox fx:id="checkBox1" mnemonicParsing="false" selected="false" styleClass="check-rounded" text="Course">
+                                 <tooltip>
+                                    <Tooltip text="Empty Tooltip" />
+                                 </tooltip>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                              <CheckBox fx:id="checkBox2" mnemonicParsing="false" selected="false" styleClass="check-rounded" text="Student">
+                                 <tooltip>
+                                    <Tooltip text="Empty Tooltip" />
+                                 </tooltip>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                              <CheckBox fx:id="checkBox3" mnemonicParsing="false" selected="false" styleClass="check-rounded" text="Grade">
+                                 <tooltip>
+                                    <Tooltip text="Empty Tooltip" />
+                                 </tooltip>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                              <CheckBox fx:id="checkBox4" mnemonicParsing="false" selected="false" styleClass="check-rounded" text="Teacher">
+                                 <tooltip>
+                                    <Tooltip text="Empty Tooltip" />
+                                 </tooltip>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                              <CheckBox fx:id="checkBox5" mnemonicParsing="false" selected="false" styleClass="check-rounded" text="User">
+                                 <tooltip>
+                                    <Tooltip text="Empty Tooltip" />
+                                 </tooltip>
+                              </CheckBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" text="备份" onAction="#submit">
+                                       <VBox.margin>
+                                          <Insets top="30.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="554.0" prefWidth="940.0" />
+                                    </children>
+                                </VBox>
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" left="30.0" right="30.0" />
+                            </padding>
+                        </VBox>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+    <stylesheets>
+        <URL value="@../../theme/css/material-color.css" />
+        <URL value="@../../theme/css/skeleton.css" />
+        <URL value="@../../theme/css/light.css" />
+        <URL value="@../../theme/css/bootstrap.css" />
+        <URL value="@../../theme/css/simple-green.css" />
+        <URL value="@../../theme/css/shape.css" />
+        <URL value="@../../theme/css/typographic.css" />
+        <URL value="@../../theme/css/helpers.css" />
+        <URL value="@../../theme/css/master.css" />
+    </stylesheets>
+</StackPane>
